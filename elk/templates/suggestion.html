@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Suggestion</title>
+
+</head>
+<body>
+
+<h1>Result of search for the word "{{resp}}" : </h1>
+<ul>
+
+    {% for title, author, Id in list %}
+    <li><a href="https://www.gutenberg.org/ebooks/{{Id}}">{{title}} <b>BY</b> {{author}} </a></li>
+    {% endfor %}
+
+</ul>
+     
+
+</body>
+</html> 
